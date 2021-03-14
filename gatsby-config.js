@@ -22,7 +22,7 @@ try {
     }
 }
 
-if (process.env.NODE_ENV === `production` && config.siteUrl === `https://happy-hypatia-9cc9b2.netlify.app/` && !process.env.SITEURL) {
+if (process.env.NODE_ENV === `production` && config.siteUrl === `https://happy-hypatia-9cc9b2.netlify.app` && !process.env.SITEURL) {
     throw new Error(`siteUrl can't be localhost and needs to be configured in siteConfig. Check the README.`) // eslint-disable-line
 }
 
